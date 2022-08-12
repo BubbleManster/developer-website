@@ -1,0 +1,21 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Roboto+Mono&display=swap" rel="stylesheet">
+<ul>
+    <li><a class="active" id="active" style="font-family: 'Inter', sans-serif;font-family: 'Roboto Mono', monospace;" href="/">Home</a></li>
+    <li><a class="dormant" id="dormant" style="font-family: 'Inter', sans-serif;font-family: 'Roboto Mono', monospace;" href="/social">Socials</a></li>
+</ul>
+<script>
+    const page1=document.getElementById("dormant");
+    const page2=document.getElementById("active");
+    var pageName = location.href.split("/").slice(-1);
+    if(pageName=="social"){
+        page1.classList.remove("dormant");
+        page2.classList.remove("active");
+        page1.classList.add('active');
+        page2.classList.add('dormant');
+    }
+    else{
+
+    }
+</script>
